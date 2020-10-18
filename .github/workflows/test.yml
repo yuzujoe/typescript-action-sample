@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: prComment
-      - uses: ./
+        uses: ./
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           message: PR comment test
